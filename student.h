@@ -9,10 +9,11 @@ using namespace std;
 
 class student{
  public: //public functions
-  Student();
+  Student(const char*, int, float);
+  ~Student();
   char* getName();
-  int* getID();
-  float* getGPA();
+  int getID();
+  float getGPA();
  private: //private variables
   char name[50];
   int ID;
