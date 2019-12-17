@@ -4,24 +4,24 @@
 
 using namespace std;
 
-student::Student(const char* newname, int newID, float newGPA) {
+Student::Student(const char* newname, int newID, float newGPA) {
   strcpy(name, newname);
   ID = newID;
   GPA = newGPA;
 }
 
-student::~Student() {
+Student::~Student() {
   delete name;
 }
 
-char* student::getName() {
+char* Student::getName() {
   return name;
 }
 
-int student::getID() {
+int Student::getID() {
   return ID;
 }
 
-float student::getGPA() {
+float Student::getGPA() {
   return GPA;
 }

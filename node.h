@@ -7,17 +7,19 @@
 
 using namespace std;
 
-class node{
+class Node{
  public:
-  node(student*);//constructor
+  Node(); //constructor
+  ~Node(); //destructor
   
   //getters and setters
-  node* getNext(node*);
-  void setNext(node*);
-  student* getStudent();
+
+  Node* getNext();
+  void  setNext(node*);
+  Student* getStudent();
   void setStudent(student*);
  private:
-  node* next;
-  student* student; //this is the variable that connectsa node to a student
+  Node* next;
+  Student* student; //this is the variable that connects a node to a student
 };
 #endif

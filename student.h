@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class student{
+class Student{
  public: //public functions
   Student(const char*, int, float);
   ~Student();
