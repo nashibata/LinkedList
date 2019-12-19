@@ -1,13 +1,12 @@
 #include <iostream>
 #include <cstring>
-#include <vector>
 
 #include "node.h"
 #include "student.h"
 
 using namespace std;
 
-Node::Node() { //default class
+Node::Node(Student*) { //default class
   student = NULL;
   next = NULL;
 }

@@ -9,15 +9,15 @@ using namespace std;
 
 class Node{
  public:
-  Node(); //constructor
+  Node(Student*); //constructor
   ~Node(); //destructor
   
   //getters and setters
 
   Node* getNext();
-  void  setNext(node*);
+  void  setNext(Node*);
   Student* getStudent();
-  void setStudent(student*);
+  void setStudent(Student*);
  private:
   Node* next;
   Student* student; //this is the variable that connects a node to a student
